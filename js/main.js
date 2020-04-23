@@ -57,7 +57,7 @@ function init() {
 };
 
 
-
+//header fixed//
 $(window).scroll(function(){
   if ($(window).scrollTop() >= 300) {
       $('nav').addClass('fixed-header');
@@ -69,7 +69,14 @@ $(window).scroll(function(){
   }
 });
 
+//add to enquiry//
 
+let carts = document.querySelectorAll('.Add-to-enquiry')
 
+for (let i=0; carts.length; i++) {
+  carts[i].addEventListener('click', () => {
+    console.log('added to enquiry')
+  })
+}
 
 

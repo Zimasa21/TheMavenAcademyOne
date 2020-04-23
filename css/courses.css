@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
+
+/*body*/
+.Course-Outline {
+    width: 90rem;
+    height: 90.25rem;
+    background-color: #ffffff;
+  }
+/*header*/
+    .Rectangle {
+        width: 1440px;
+        height: 70px;
+        box-shadow: inset 0 - 1px 0 0 #cfd8dd;
+        background-color:#36414c;
+    }  
+    header .logo{ 
+        position: relative;
+        width: 113px;
+        height: 44px;
+        margin-top: 13px;
+        margin-left: 24px;
+        margin-right: 733px;
+    }
+    header {
+        display: flex;
+        justify-content:  flex;                  
+    }
+    .home {
+        margin-left: 58px;
+        width: 33px;
+        height: 20px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: #ffffff;       
+    }
+    .courses {
+        margin-left: 58px;
+        width: 50px;
+        height: 20px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .contact-us {
+        margin-left: 58px;
+        width: 66px;
+        height: 20px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .cart {
+        margin-left: 58px;
+        margin-left: 63px;
+        width: 28px;
+        height: 20px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    nav ul {
+        list-style-type: none;
+            
+    }
+    nav ul li {
+        display: inline-flex;
+        margin-top: 26px;
+    }
+    .Oval {
+        width: 35px;
+        height: 35px;
+        background-color: #ffffff;    
+    }
+    button {
+        border-radius: 50%;
+        margin-top: 18px;
+        margin-left: 36px;
+        margin-right: 22px;      
+    }
+
+    
+    h2 {
+    
+    height: 51px;
+    font-family: 'Titillium Web', sans-serif, '600';
+    font-size: 50px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--charcoal-grey);
+    }
+
+.Mask {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 57rem;
+}
+.Cart {
+  position: relative;
+  display: block;
+  margin-top: 72px;
+  margin-left: 68px;
+}
+
+/*Section email send information and popup form*/
+
+    .contact-page {
+        position: relative;
+        display: block;
+        margin-top: 34.5rem;
+        margin-left: 27.313rem;
+        width: 57.188rem;
+        height: 14.063rem;
+        border-radius: 5px;
+        box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2);
+        background-color: #ffffff;
+    }
+    .background-img {
+        position: absolute;
+        margin-top: 3rem;
+        margin-left: 2.438rem;
+        width: 4.688rem;
+        height: 4.688rem;
+        display: block;
+        background-color: #5b9de3;
+        border-radius: 8px;
+    }
+    .bachler  {
+        position: absolute;
+        margin-top: 1.063rem;
+        margin-left: 1.188rem;
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .Want-to-find-out {
+        position: absolute;
+        display: block;
+        margin-top: 3.063rem;
+        margin-left: 10.188rem;
+        width: 39.688rem;
+        height: 5rem;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: #4e555a;
+    }
+    .Want-to-find-out-mor .text-style-1 {
+        color: var(--dark-sky-blue-three);
+    }
+    .bg-model {
+        width: 90rem;
+        height: 90.25rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0.7;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        display: none;
+    }
+    .model {
+        position: absolute;
+        margin-top: -17.938rem;
+        width: 57.188rem;
+        height: 17.313rem;
+        border-radius: 5px;
+        display: block;
+        background-color:  #ffffff;
+    }
+    .close {
+        width: 2.125rem;
+        height: 1.688rem;
+        background-color:#4a90e2 var(--dark-sky-blue-two);
+    }
+    .Download {
+        position: absolute;
+        display: block;
+        margin-top: 5.625rem;
+        margin-left: 11.928rem;
+        width: 39.688rem;
+        height: 2.5rem;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: #4e555a;
+    }
+    .info {
+        position: absolute;
+        margin-top: 9.438rem;
+        margin-left: 11.563rem;
+        width: 25.063rem;
+        height: 2.5rem;
+        border-radius: 15px;
+        border: solid 1px rgba(151, 151, 151, 0.34);
+        background-color: #ffffff;
+    }
+    .inputbox button {
+        position: absolute;
+        margin-top: 9.438rem;
+        margin-left: 39.75rem;
+        width: 11.25rem;
+        height: 2.5rem;
+        border-radius: 25px;
+        border: solid 2px #459de9;
+    }
+    .submit {
+        width: 5.938rem;
+        height: 0.813rem;
+        font-family: 'Titillium Web', sans-serif, '600';;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #429def;
+    }
+    .background-img2 {
+        position: absolute;
+        margin-top: 5.5rem;
+        margin-left: 5rem;
+        width: 4.688rem;
+        height: 4.688rem;
+        display: block;
+        background-color: #5b9de3;
+        border-radius: 8px;
+    }
+
+
+.footer img {
+  width: 1440px;
+  height: 462px;
+}
+
+.column-label {
+  display: inline;
+  justify-content: baseline;
+}
