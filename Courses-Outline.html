@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/courses.css">
+    <script src="/javascript/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Courses-Outline</title>
 </head>
 <body class="Courses-Outline">
@@ -19,7 +25,7 @@
         <li><a class="courses" href="#">COURSES</a></li>
         <li><a class="contact-us" href="#">CONTACT US</a></li>
         <li>
-          <a class="cart" href="cart.html">CART
+          <a id="show" class="cart" href="#">CART
             <button class="Oval">
               <i class="fa fa-shopping-basket fa-stack-3x" style="color: #4a4a4a;"><span class="number">1</span></i>
             </button>  
@@ -31,29 +37,112 @@
 
     <section class="Mask">
         <h2 class="Outline">Courses Outline</h2>
-        
-        <!--Download article syllabus section-->
-        <article class="contact-page">
-            <span class="background-img"><img class="bachler" src="https://themavenacademy.one/images/bachler-icon.svg" alt=""></span>
-            <div class="Want-to-find-out">
-                <p>Want to find out more about what you will learn during our 12 Week Full Stack Web Developer Course.</p>
-                <a class="button" href="#" id="button">Click here to Download the Curriculum</a>
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#xf30a;&#xf060;</button>
+        <div>
+            <div class="item">
+                <div class="Full-Stack">
+                    <div class="h-p-2">
+                        <h4 class="Become-a">Become a Full Stack Web Developer</h4>
+                        <p class="duration" >12 Weeks Course - In classroom</p>
+                    </div>
+                    <img class="maven-image" src="https://themavenacademy.one/images/webdeveloper.png" alt="Full-Stack">
+                    <h4 class="Price">R26,000,00 Excl Vat</h4>
+                    <a class="enquiry" href=""><button class="Add-to-cart">Add to cart</button></a>
+                </div>
             </div>
-        </article>
-        <!--popup box-->
-        <div class="bg-model">
-            <div class="model">
-                <button id="close" class="close">&times;</button>
-                <span class="background-img2"><img class="bachler" src="https://themavenacademy.one/images/bachler-icon.svg" alt=""></span>
-                <p class="Download">Download the full syllabus by entering your email address below. We will send you a link via email to download the brochure.</p>
-                <form class="contact-form" action="" id="contact-form" method="post" >
-                    <input class="info" type="text" name="userEmail" required>
-                    <a class="inputbox">
-                        <button class="submit" type="submit">Submit</button>
-                    </a>
-                </form>
+            <div class="item">
+                <div class="Front-End">
+                    <div class="h-p-2">
+                        <h4 class="Become-a">Become a Front End Web Developer</h4>
+                        <p class="duration">4 Weeks Course - In classroom</p>
+                    </div>
+                    <img src="https://themavenacademy.one/images/frontend-dev.png" alt="Front-End">
+                    <h4 class="Price">R26,000,00 Excl Vat</h4>
+                    <a class="enquiry" href=""><button class="Add-to-cart">Add to cart</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="Java-Spring">
+                    <div class="h-p-2">
+                        <h4 class="Become-a">Become a Java Spring Boot Developer</h4>
+                        <p class="duration">12 Weeks Course - In classroom</p>
+                    </div>
+                    <img src="https://themavenacademy.one/images/spring-boot-dev.png" alt="Java-Spring">
+                    <h4 class="Price">R26,000,00 Excl Vat</h4>
+                    <a class="enquiry" href=""><button class="Add-to-cart">Add to cart</button></a>
+                </div>
             </div>
         </div>
+        
+
+        <!--Modules tab-->
+        <div>
+            <ul class="Modules-label" id="createdTab">
+                <li class="nav-item"><a class="nav-link active" href="#pre-work">Pre Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#module1">Module 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#module2">Module 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#module3">Module 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="#module4">Module 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="#master-class">Master Class Electives</a></li>
+            </ul>
+            <!--tab paragraph and heading--> 
+            <div class="classes">
+                <div class="tab-pane fade show active" id="pre-work"><span class="modules">
+                    <h5>Pre Work</h5>
+                    <p>All you need to have done beforehand, is create a few accounts with websites like Github, Gmail, CodePen and LinkedIn so that you can hit the ground running on Day 1.</p>
+                </div></span>
+                <div class="tab-pane fade" id="module1"><span class="modules">
+                    <h5>Module 1: Onboarding 101</h5>
+                    <p>Welcome to The Maven Academy. This is the beginning of your journey to becoming a world-class developer. This course will take you through the information as though you're starting a new job as a frontend web developer. Learn 'on the job' and up-skill in both the core aspects of HTML, CSS & Javascript, as well as being a useful team member at your first job.</p>
+                </div></span>
+                <div class="tab-pane fade" id="module2"><span class="modules">
+                    <h5>Module 2: HTML, CSS & Git</h5>
+                    <p>We need intro In this module, you'll learn about the fundamentals of every web page: HTML & CSS. Using these 2 technologies, you'll see how to create beautiful components and layouts to create your very own site. You'll also learn how to keep a log of every change to your files, through Git, and how to safely store your code on Github. here…</p>
+                </div></span>
+                <div class="tab-pane fade" id="module3"><span class="modules">
+                    <h5>Module 3: Javascript</h5>
+                    <p>In this module, you'll discover the power of your first programming language — Javascript. You'll learn core concepts and techniques to make your website more dynamic and interactive.</p>
+                </div></span>
+                <div class="tab-pane fade" id="module4"><span class="modules">
+                    <h5>Module 4: Node.Js, Api’s, Crud & Databases.</h5>
+                    <p>By phase 3, you will be familiar with Javascript in the front-end. So now it's time to see how Javascript can also be a powerful back-end. Using Node.js, we'll explore how Javascript can power a server, and how you can easily add functionality to your system with the Node Package Manager.</p>
+                </div></span>
+                <div class="tab-pane fade" id="master-class"><span class="modules">
+                    <h5>Master Class Electives</h5>
+                    <p>We take you the extra mile in our standard curriculum, but for those that want to go even further beyond that—check out our Master Class Electives.</p>
+                </div></span>
+            </div>
+        </div>
+
+        <!--Download article syllabus section-->
+        <div> 
+            <article class="contact-page">
+                <span class="background-img"><img class="bachler" src="https://themavenacademy.one/images/bachler-icon.svg" alt=""></span>
+                <div class="Want-to-find-out">
+                    <p>Want to find out more about what you will learn during our 12 Week Full Stack Web Developer Course.</p>
+                    <a class="button" href="#" id="button">Click here to Download the Curriculum</a>
+                </div>
+            </article>
+            <!--popup box-->
+            <div class="bg-model">
+                <div class="model">
+                    <button id="close" class="close">&times;</button>
+                    <span class="background-img2"><img class="bachler" src="https://themavenacademy.one/images/bachler-icon.svg" alt=""></span>
+                    <p class="Download">Download the full syllabus by entering your email address below. We will send you a link via email to download the brochure.</p>
+                    <form class="contact-form" action="" id="contact-form" method="post" >
+                        <input class="info" type="text" name="userEmail" required>
+                        <a class="inputbox">
+                            <button class="submit" type="submit">Submit</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <button id="remove" class="close">&times;</button>
+            <h2 class="sideh2">Cart</h2>
+        </aside>
     </section>
   
 

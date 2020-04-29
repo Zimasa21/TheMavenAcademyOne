@@ -98,38 +98,169 @@
         margin-right: 22px;      
     }
 
-    
-    h2 {
-    
-    height: 51px;
-    font-family: 'Titillium Web', sans-serif, '600';
-    font-size: 50px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--charcoal-grey);
+/*section*/
+    .Mask {
+        background-color: #ffffff;
+        width: 1440px;
+        height: 57.063rem;
+    }
+    .Outline  {
+        position: relative;
+        display: block;
+        margin-top: 5.125rem;
+        margin-left: 27.313rem;
+        width: 30.313rem;
+        height: 3.188rem;
+        font-family:  'Titillium Web', sans-serif, '600';
+        font-size: 3.125rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #343d42 var(--charcoal-grey);
     }
 
-.Mask {
-  background-color: #ffffff;
-  width: 1440px;
-  height: 57rem;
-}
-.Cart {
-  position: relative;
-  display: block;
-  margin-top: 72px;
-  margin-left: 68px;
-}
+    .next {
+        position: absolute;
+        
+        margin-left: 2.25rem;
+    }
+    .item {
+        position: absolute;
+        display: block;
+        margin-top: 0.438rem;
+        margin-left: 3.75rem;
+    }
+    .Become-a {
+        margin-left: 1.813rem;
+        width: 15.5rem;
+        height: 3.313rem;
+        font-family: 'Titillium Web', sans-serif, '600';;
+        font-size: 0.938rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #459de9;
+    }
+    .duration  {
+        position: absolute;
+        margin-left: 2.438rem;
+        margin-top: -0.438rem;
+        height: 1.125rem;
+        font-family: 'Titillium Web', sans-serif, '400';;
+        font-size: 0.938rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #4a4a4a;
+    }
+    .maven-image  {
+        margin-left: 2.063rem;
+        width: 15.125rem;
+        height: 15.125rem;
+    }
+    .Price {
+        margin-left: 3.438rem;
+        width: 13rem;
+        height: 1.625rem;
+        font-family: 'Titillium Web', sans-serif,'600';;
+        font-size: 1.25rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        color: #3a9aef;
+    }
+    .Add-to-cart {
+        margin-left: -0.313rem;
+        width: 17.563rem;
+        height: 1.125rem;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 0.875rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: center;
+        color: #4d96ee;
+    }
+    .enquiry button {
+        width: 17.813rem;
+        height: 2.5rem;
+        border-radius: 22.5px;
+        border: solid 2px #60a0e3;
+    } 
 
+/*aside slide modules/tab modules */
+    .Modules-label {
+        position: absolute;
+        display: block;
+        margin-top: 1.653rem;
+        margin-left: 27.938rem;
+        width: 50.063rem;
+        height: 2.813rem;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 1.125rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: normal;
+        color: #4e555a;
+    }
+      .Modules-label a {
+        font-weight: bold;
+        color: #5198eb;
+    } 
+    .nav-item   {
+        list-style-type: none;       
+    }
+     .nav-item   {
+        display: inline-flex;
+    }
+    .classes {
+        position:absolute;
+        display: block;
+        margin-top: 7.75rem;
+        margin-left: 27.313rem;
+        width: 57.188rem;
+        height: 16.688rem;
+        background-color: rgba(91, 157, 227, 0.08);   
+    }
+    .modules {
+        position: absolute;
+        display: block;
+        margin-top: 2.25rem;
+        margin-left: 2.813rem;
+        width: 45.25rem;
+        height: 10.938rem;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.19;
+        letter-spacing: normal;
+        color: #4f5559;
+        }
+      .modules h5 {
+        font-size: 1.375rem;
+        font-weight: bold;
+}
+    
 /*Section email send information and popup form*/
 
     .contact-page {
         position: relative;
         display: block;
-        margin-top: 34.5rem;
+        margin-top: 29.25rem;
         margin-left: 27.313rem;
         width: 57.188rem;
         height: 14.063rem;
@@ -177,8 +308,8 @@
     .bg-model {
         width: 90rem;
         height: 90.25rem;
-        background-color: rgba(0, 0, 0, 0.7);
-        opacity: 0.7;
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0.9;
         position: absolute;
         display: flex;
         align-items: center;
@@ -248,6 +379,12 @@
         text-align: center;
         color: #429def;
     }
+    .inputbox button:hover {
+        cursor: pointer;
+        background-color: #4a90e4;
+        color: #ffffff;
+        opacity: 0.8;
+    }
     .background-img2 {
         position: absolute;
         margin-top: 5.5rem;
@@ -259,6 +396,36 @@
         border-radius: 8px;
     }
 
+    .sidebar  {
+        position: absolute;
+        margin-top: 4.313rem;
+        margin-left: 62.938rem;
+        display: flex;
+        display: none;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+        width: 27.063rem;
+        height: 57.063rem;
+        box-shadow: 0 15px 30px 0 rgba(25, 29, 34, 0.2);
+        background-color: #ffffff;
+    }
+    .sideh2 {
+      position: relative;
+      display: block;
+      margin-top: 4.188rem;
+      margin-left: 1.438rem;
+      width: 30.313rem;
+      height: 3.188rem;
+      font-family:  'Titillium Web', sans-serif, '600';
+      font-size: 3.125rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #343d42 var(--charcoal-grey);
+    } 
 
 .footer img {
   width: 1440px;
