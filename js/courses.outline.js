@@ -41,7 +41,7 @@ $(document).ready(function(){
 });
 
 //view cart selection
- document.getElementById("show").addEventListener("click",
+ document.getElementById("view-busket").addEventListener("click",
     function() {
         document.querySelector(".sidebar").style.display = "flex";
     
@@ -52,3 +52,36 @@ $(document).ready(function(){
         document.querySelector(".sidebar").style.display = "none";
     
 });
+
+var removeCartItem = document.getElementsByClassName('remove-product')
+console.log(removeCartItem)
+for (var i = 0; i < removeCartItem.length; i++) {
+  var buttons = removeCartItem[i]
+  buttons.addEventListener('click', function(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+  })
+}
+  
+  // Add to cart
+  document.addItemToCart = function(id, price, count) {
+    for(var item in cart) {
+      if(cart[item].id === id) {
+        cart[item].count ++;
+        saveCart();
+        return;
+      }
+    }
+    var item = new Item(id, price, count);
+    cart.push(item);
+    saveCart();
+  }
+  // Add item
+$('.Add-to-cart').click(function(event) {
+  event.preventDefault();
+  var product = $(this).show('product');
+  productCart.addItemToCart(id, 1);
+  displayCart();
+});
+
+

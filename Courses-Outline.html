@@ -13,32 +13,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Courses-Outline</title>
 </head>
 <body class="Courses-Outline">
-
-  <header class="Rectangle">
-    <img class="logo" src="https://themavenacademy.one/images/maven_academy.png" alt="maven-academy-logo">
-    <nav>
-      <ul class="nav-links">
-        <li><a class="home" href="index.html">HOME</a></li>
-        <li><a class="courses" href="#">COURSES</a></li>
-        <li><a class="contact-us" href="#">CONTACT US</a></li>
-        <li>
-          <a id="show" class="cart" href="#">CART
-            <button class="Oval">
-              <i class="fa fa-shopping-basket fa-stack-3x" style="color: #4a4a4a;"><span class="number">1</span></i>
-            </button>  
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!--Header-->
+    <header class="Rectangle">
+        <img class="logo" src="https://themavenacademy.one/images/maven_academy.png" alt="maven-academy-logo">
+        <nav class="tab-headers">
+            <ul class="nav-links">
+                <li><a class="home" href="index.html">HOME</a></li>
+                <li><a class="courses" href="Courses-Outline.html">COURSES</a></li>
+                <li><a class="contact-us" href="#">CONTACT US</a></li>
+                <li><a class="cart" href="Cart.html">CART  </a></li>
+            </ul>
+        </nav>
+        <button class="Oval" id="view-busket" data-target="#cart">
+            <i class="fa fa-shopping-basket fa-stack-3x" style="color: #4a4a4a;">(<span class="total-count"></span>)</i>
+        </button> 
+    </header>
 
     <section class="Mask">
         <h2 class="Outline">Courses Outline</h2>
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#xf30a;&#xf060;</button>
+        <!--Cards courses slide show-->
         <div>
+            <a class="fas" onclick="plusDivs(-1)"></a>
             <div class="item">
                 <div class="Full-Stack">
                     <div class="h-p-2">
@@ -47,7 +46,7 @@
                     </div>
                     <img class="maven-image" src="https://themavenacademy.one/images/webdeveloper.png" alt="Full-Stack">
                     <h4 class="Price">R26,000,00 Excl Vat</h4>
-                    <a class="enquiry" href=""><button class="Add-to-cart">Add to cart</button></a>
+                    <a class="enquiry" href="#"><button class="Add-to-cart">Add to cart</button></a>
                 </div>
             </div>
             <div class="item">
@@ -58,7 +57,7 @@
                     </div>
                     <img src="https://themavenacademy.one/images/frontend-dev.png" alt="Front-End">
                     <h4 class="Price">R26,000,00 Excl Vat</h4>
-                    <a class="enquiry" href=""><button class="Add-to-cart">Add to cart</button></a>
+                    <a class="enquiry" href="#"><button class="Add-to-cart">Add to cart</button></a>
                 </div>
             </div>
             <div class="item">
@@ -69,13 +68,12 @@
                     </div>
                     <img src="https://themavenacademy.one/images/spring-boot-dev.png" alt="Java-Spring">
                     <h4 class="Price">R26,000,00 Excl Vat</h4>
-                    <a class="enquiry" href=""><button class="Add-to-cart">Add to cart</button></a>
+                    <a class="enquiry" href="#item-3"><button class="Add-to-cart">Add to cart</button></a>
                 </div>
             </div>
         </div>
         
-
-        <!--Modules tab-->
+        <!--Modules tabs-->
         <div>
             <ul class="Modules-label" id="createdTab">
                 <li class="nav-item"><a class="nav-link active" href="#pre-work">Pre Work</a></li>
@@ -139,17 +137,61 @@
             </div>
         </div>
 
-        <aside class="sidebar">
-            <button id="remove" class="close">&times;</button>
+        <!--view busket side Cart pop-->
+        <aside class="sidebar" id="sidebar">
+            <a class="remove" href="">
+                <button id="remove" class="cancell">&times;</button>
+            </a>
             <h2 class="sideh2">Cart</h2>
+            <h5 class="Items">Items</h5>
+            <div class="show-cart">
+                <hr class="Line1">
+                <div class="product" id="item-1">
+                    <a class="remove-product" type="button">&times;</a>
+                    <img class="product-image" src="https://themavenacademy.one/images/webdeveloper.png"> 
+                    <div class="part-2">   
+                        <div class="product-details">
+                            <div class="product-title">Become a Full Stack Web Developer</div>
+                            <p class="product-description">12 Weeks Course - In classroom</p>
+                        </div>
+                        <div class="product-price">26,000,00 Excl Vat</div>
+                    </div>    
+                </div>
+                <hr class="Line2">
+                <div class="product" id="item-2">
+                    <a class="remove-product" type="button">&times;</a>
+                    <img class="product-image" src="https://themavenacademy.one/images/frontend-dev.png">
+                    <div class="part-2">   
+                        <div class="product-details">
+                            <div class="product-title">Become a Front End Web Developer</div>
+                            <p class="product-description">4 Weeks Course - In classroom</p>
+                        </div>
+                        <div class="product-price">26,000,00 Excl Vat</div>
+                    </div>    
+                </div>
+                <hr class="Line3">
+                <div class="product" id="item-3">
+                    <a class="remove-product" type="button">&times;</a>
+                    <img class="product-image" src="https://themavenacademy.one/images/spring-boot-dev.png">
+                    <div class="part-2">
+                        <div class="product-details">
+                            <div class="product-title">Become a Java Spring Boot Developer</div>
+                            <p class="product-description">4 Weeks Course - In classroom</p>
+                        </div>
+                        <div class="product-price">26,000,00 Excl Vat</div>
+                    </div>    
+                </div>
+            </div>   
+            <a class="view-busket">
+                <button class="view" type="submit">View Busket</button>
+            </a>
         </aside>
     </section>
   
-
-
-  <footer class="footer">
-    <img src="image/Screenshot (26).png" alt="">
-  </footer>
+    <!--footer-->
+    <footer class="footer">
+        <img src="image/Screenshot (26).png" alt="">
+    </footer>
   <script type="text/javascipt"></script>
   <script src="js/courses.outline.js"></script>
   <script src="./vendor/jquery/jquery-3.2.1.min.js"></script>

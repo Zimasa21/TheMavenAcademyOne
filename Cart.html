@@ -7,35 +7,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/javascript/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <title>Cart</title>
 </head>
 <body class="Cart-page">
-
   <header class="Rectangle">
     <img class="logo" src="https://themavenacademy.one/images/maven_academy.png" alt="maven-academy-logo">
-    <nav>
+    <nav class="tab-headers">
       <ul class="nav-links">
         <li><a class="home" href="index.html">HOME</a></li>
-        <li><a class="courses" href="#">COURSES</a></li>
-        <li><a class="contact-us" href="#">CONTACT US</a></li>
-        <li>
-          <a id="show" class="cart" href="#">CART
-            <button class="Oval">
-              <i class="fa fa-shopping-basket fa-stack-3x" style="color: #4a4a4a;"><span class="number">1</span></i>
-            </button>  
-          </a>
-        </li>
+        <li><a class="courses" href="Courses-Outline.html">COURSES</a></li>
+        <li><a class="contact-us" href="#contact-us/index.html">CONTACT US</a></li>
+        <li><a class="cart" href="Cart.html">CART  </a></li>
       </ul>
     </nav>
+    <button class="Oval" id="view-busket" data-target="#cart">
+      <i class="fa fa-shopping-basket fa-stack-3x" style="color: #4a4a4a;">(<span class="total-count"></span>)</i>
+    </button>
   </header>
 
   <section class="Mask">
     <h2 class="Cart">Cart</h2>
     <div class="column-labels">
-      <label class="product-details">Product</label>
-      <label class="product-price">Price</label>
-      <label class="product-quantity">Quantity</label>
-      <label class="product-line-price">Total</label>
+      <label class="details">Product</label>
+      <label class="price">Price</label>
+      <label class="quantity">Quantity</label>
+      <label class="line-price">Total</label>
     </div>
     <hr class="Line">
     <div class="product">
@@ -98,6 +103,7 @@
     </a>  
   </section>
 
+  <!--footer-->
   <footer class="footer">
     <img src="image/Screenshot (26).png" alt="">
   </footer>

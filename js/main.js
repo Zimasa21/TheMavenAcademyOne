@@ -56,15 +56,9 @@ function init() {
 
 };
 
-
 //add to enquiry//
 
-let carts = document.querySelectorAll('.Add-to-enquiry')
 
-for (let i=0; carts.length; i++) {
-  carts[i].addEventListener('click', () => {
-    console.log('added to enquiry')
-  })
-}
+
 
 

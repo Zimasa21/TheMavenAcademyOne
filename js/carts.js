@@ -1,10 +1,9 @@
 "use strict"
 
-document.getElementsByClassName('close')
-console.log(removeProductButton)
-for (var i = 0; i < removeProductButton.length; i++) {
-    var button = removeProductButton[i]
-    button.addEventListener('click', function() {
-        console.log('clicked')
+let enquiry = document.querySelectorAll(".Add-to-enquiry");
+
+for (let i=0; i < enquiry.length; i++) {
+    enquiry[i].addEventListener('click', () => {
+        console.log("added to cart")
     })
 }

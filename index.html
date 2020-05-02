@@ -13,22 +13,19 @@
     <!--Header-->
     <header class="Rectangle">
         <img class="logo" src="https://themavenacademy.one/images/maven_academy.png" alt="maven-academy-logo">
-        <nav>
+        <nav class="tab-headers">
             <ul class="nav-links">
                 <li><a class="home" href="index.html">HOME</a></li>
-                <li><a class="courses" href="#">COURSES</a></li>
-                <li><a class="contact-us" href="#">CONTACT US</a></li>
-                <li>
-                    <a id="show" class="carts" href="#">CART
-                        <button class="Oval">
-                            <i class="fa fa-shopping-basket fa-stack-3x" style="color: #4a4a4a;"><span class="number">1</span></i>
-                        </button>  
-                    </a>
-                </li>
+                <li><a class="courses" href="Courses-Outline.html">COURSES</a></li>
+                <li><a class="contact-us" href="#contact-us">CONTACT US</a></li>
+                <li><a class="cart" href="Cart.html">CART</a></li>
             </ul>
         </nav>
+        <button class="Oval" id="view-busket" data-target="#cart">
+            <i class="fa fa-shopping-basket fa-stack-3x" style="color: #4a4a4a;"><span class="total-count"></span></i>
+        </button> 
     </header>
-     
+
     <!--Cover page-->
     <section class="Cover-Page">
         <div class="Next-level">
@@ -84,11 +81,13 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <!--Courses page-->
+    <script src="js/carts.js"></script>
     <script src="css/owl-carousel.css"></script>
     <section class="Course-prospect">
         <h4 class="Outline">Our Courses</h4>
         <p class="Immersive-training-p">Immersive training programs aimed at accelerating your career in tech, regardless of your experience level. We meet you where you’re at, and support you far beyond your goals!</p>
         <div id="owl-carousel" class="Our-Courses">
+            
             <div class="item">
                 <div class="Full-Stack">
                     <div class="h-p-2">
@@ -97,8 +96,8 @@
                     </div>
                     <img src="https://themavenacademy.one/images/webdeveloper.png" alt="Full-Stack">
                     <h4 class="price">R26,000,00 Excl Vat</h4>
-                    <a class="View-course-detail" href="Courses-Outline.html">View course detail</a>
-                    <a class="enquiry1" href=""><button class="Add-to-enquiry">Add to enquiry</button></a>
+                    <a class="View-course-detail" href="#">View course detail</a>
+                    <a class="enquiry cart1" href="#"><button class="Add-to-enquiry">Add to enquiry</button></a>
                 </div>
             </div>
             <div class="item">
@@ -109,8 +108,8 @@
                     </div>
                     <img src="https://themavenacademy.one/images/frontend-dev.png" alt="Front-End">
                     <h4 class="price">R26,000,00 Excl Vat</h4>
-                    <a class="View-course-detail" href="Courses-Outline.html">View course detail</a>
-                    <a class="enquiry2" href=""><button class="Add-to-enquiry">Add to enquiry</button></a>
+                    <a class="View-course-detail" href="#">View course detail</a>
+                    <a class="enquiry cart2" href="#"><button class="Add-to-enquiry">Add to enquiry</button></a>
                 </div>
             </div>
             <div class="item">
@@ -121,8 +120,8 @@
                     </div>
                     <img src="https://themavenacademy.one/images/spring-boot-dev.png" alt="Java-Spring">
                     <h4 class="price">R26,000,00 Excl Vat</h4>
-                    <a class="View-course-detail" href="Courses-Outline.html">View course detail</a>
-                    <a class="enquiry3" href=""><button class="Add-to-enquiry">Add to enquiry</button></a>
+                    <a class="View-course-detail" href="#">View course detail</a>
+                    <a class="enquiry cart3" href="#"><button class="Add-to-enquiry">Add to enquiry</button></a>
                 </div>
             </div>
         </div>
@@ -137,15 +136,15 @@
             <div class="item"><img class="demo cursor" src="https://themavenacademy.one/images/companies-logo/logo-nedbank.png" alt="Nedbank-logo"></div>
             <div class="item"><img class="demo cursor" src="https://themavenacademy.one/images/companies-logo/logo-vuma.png" alt="vuma-logo"></div>
             <div class="item"><img class="demo cursor" src="https://themavenacademy.one/images/companies-logo/logo-flash.png" alt="flash-logo"></div>
-        </div>
+        </div>    
         <Script>
             $('.owl-carousel').owlCarousel({
                 loop:true,
-                margin: 10,
+                    
                 nav: true,
                 navText:['<i class="fas" style="color: #343d34;">&#xf061;</i>'],
                 autoplay:true,
-                autoplayTimeout:3000,
+                autoplayTimeout: 2000,
                 items: 4,
                 responsive:{
                     0:{
@@ -160,6 +159,9 @@
                 }
             })
         </Script>
+        
+
+       
         <script src="css/owl-carousel.css"></script>
         <button class="Find-out">Find out more</button>
     </Section>
@@ -197,7 +199,7 @@
     </section>
 
     <!--Thank you for your enquiry-->
-    <section class="Back-page">
+    <section class="Back-page" id="contact-us">
         <img class="Back-picture" src="https://themavenacademy.one/images/contact-banner.png" alt="">
         <h3 class="thank-you">Thank you for your enquiry.</h3>
         <p class="friendly-call">One of our friendly course consultants and we’ll get back to you within 24 hours.</p>
